@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>addManage.html</title>
+
+<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+<meta http-equiv="description" content="this is my page">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+<!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+
+</head>
+
+<body bgcolor="#CCCFFF">
+
+	<table width="1013" border="0" align="center">
+		<tr align="center">
+			<td><a href="addManage.html" target="_self">增加管理员</a>
+			</td>
+			<td><a href="manageList.jsp" target="_self">管理员列表</a>
+			</td>
+			<td><a href="perInformation.html" target="_self">私人信息</a>
+			</td>
+		</tr>
+	</table>
+<br>
+	<form action="addCheck.jsp" method="get" name="form1">
+		<table align="center" border="1">
+			<tr>
+				<td>*账号：</td>
+				<td><input type="text" size="15" name="userId" />（请输入管理员账号）</td>
+			</tr>
+			<tr>
+				<td>*登录密码：</td>
+				<td><input type="password" size="15" name="password" />请输入管理员登录密码</td>
+			</tr>
+			<td>*重复密码：</td>
+			<td><input type="password" size="15" name="password2" />再次输入密码</td>
+			</tr>
+			<tr>
+				<td>*姓名：</td>
+				<td><input type="text" size="15" name="username" />请输入真实姓名</td>
+			</tr>
+			<tr>
+				<td>*管理员邮箱：</td>
+				<td><input type="text" size="15" name="email" />管理员邮箱</td>
+			</tr>
+			<tr>
+				<td>*联系电话：</td>
+				<td><input type="text" size="15" name="tel" />管理员联系电话</td>
+			</tr>
+			<tr>
+				<td>*管理员权限：</td>
+				<td><input type="radio" name="manage" value="管理员管理"
+					checked="checked" />管理员管理<br /> <input type="radio"
+					name="manage" value="资费管理" />资费管理<br /> <input
+					type="radio" name="manage" value="用户管理" />用户管理<br /> <input
+					type="radio" name="manage" value="账务管理" />账务管理<br /> <input
+					type="radio" name="manage" value="账单管理" />账单管理</td>
+			</tr>
+
+		</table>
+		<p align="center">
+			<input type="submit" value=" 提交" /> <input type="reset" value="重置" />
+		</p>
+
+
+	</form>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<script type="text/javascript">
+    
+     function out(){
+         var p=document.getElementById("password").value;
+         var p1=document.getElementById("password1").value;
+         if(p1==p){
+            return;
+         }else{
+           alert("密码不一致！");
+           return;
+         }
+     }
+</script>
+</head>
+
+<body bgcolor="#CCCFFF">
+      <form action="registerCheck.jsp" method="post">
+      <br />
+          <br />
+
+                    <table width="349" height="418" border="1" align="center" bgcolor="#CCCFFF">
+                <tr align="center">
+                  <td colspan="2" width="75">请注册...</td>
+                </tr>
+                <tr>
+                  <td>用户名：</td>
+                  <td width="210"><input type="text" name="username" size="30" placeholder="请输入用户名" /></td>
+                </tr>
+                <tr>
+                  <td>密 码：</td>
+                  <td><input type="password" name="password" id="password" size="30" placeholder="请输入密码" /></td>
+                </tr>
+                <tr>
+                  <td>确认密码：</td>
+                  <td><input type="password" name="password1" id="password1" onblur="out();" size="30" placeholder="请再次输入密码" /></td>
+                </tr>
+                <tr>
+                  <td>个人爱好：</td>
+                  <td>
+                      <textarea name="love" ></textarea>
+                  </td>
+                </tr>
+                <tr>
+                  <td>职业：</td>
+                  <td>
+                     <select name="professional" size="1">
+                       <option name="professional" value="Java工程师">Java工程师</option>
+                       <option name="professional" value="公务员">公务员</option>
+                       <option name="professional" value="学生">学生</option>
+                       <option name="professional" value="其他">其他</option>
+                     </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td>性别：</td>
+                  <td>
+                      <input type="radio" name="sex" value="男" />男
+                      <input type="radio" name="sex" value="女" />女
+                  </td>
+                </tr>
+                <tr>
+                  <td>电子邮箱：</td>
+                  <td><input type="text" name="email" placeholder="请输入电子邮箱" /></td>
+                </tr>
+                <tr>
+                  <td>出生年月：</td>
+                  <td>
+                     <select name="birth">
+                        <option name="birth" value="1990">1990</option>
+                        <option name="birth" value="1991">1991</option>
+                        <option name="birth" value="1992">1992</option>
+                        <option name="birth" value="1993">1993</option>
+                        <option name="birth" value="1994">1994</option>
+                        <option name="birth" value="1995">1995</option>
+                        <option name="birth" value="1996">1996</option>
+                        <option name="birth" value="1997">1997</option>
+                        <option name="birth" value="1998">1998</option>
+                        <option name="birth" value="1999">1999</option>
+                        <option name="birth" value="2000">2000</option>
+                        <option name="birth" value="2001">2001</option>
+                        <option name="birth" value="2002">2002</option>
+                        <option name="birth" value="2003">2003</option>
+                        <option name="birth" value="2004">2004</option>
+                        <option name="birth" value="2005">2005</option>
+                        <option name="birth" value="2006">2006</option>
+                        <option name="birth" value="2007">2007</option>
+                        <option name="birth" value="2008">2008</option>
+                     </select>年
+                      <select name="birth1">
+                       <option name="birth1" value="01">01</option>
+                       <option name="birth1" value="02">02</option>
+                       <option name="birth1" value="03">03</option>
+                       <option name="birth1" value="04">04</option>
+                       <option name="birth1" value="05">05</option>
+                       <option name="birth1" value="06">06</option>
+                       <option name="birth1" value="07">07</option>
+                       <option name="birth1" value="08">08</option>
+                       <option name="birth1" value="09">09</option>
+                       <option name="birth1" value="10">10</option>
+                       <option name="birth1" value="11">11</option>
+                       <option name="birth1" value="12">12</option>
+                     </select>月
+                     <select name="birth2">
+                       <option name="birth2" value="01">01</option>
+                       <option name="birth2" value="02">02</option>
+                       <option name="birth2" value="03">03</option>
+                       <option name="birth2" value="04">04</option>
+                       <option name="birth2" value="05">05</option>
+                       <option name="birth2" value="06">06</option>
+                       <option name="birth2" value="07">07</option>
+                       <option name="birth2" value="08">08</option>
+                       <option name="birth2" value="09">09</option>
+                       <option name="birth2" value="10">10</option>
+                       <option name="birth2" value="11">11</option>
+                       <option name="birth2" value="12">12</option>
+                     </select>日
+                  </td>
+                </tr>
+                <tr>
+                  <td>所在地：</td>
+                  <td>
+                      <select name="location">
+                          <option name="location" value="北京">北京</option>
+                           <option name="location" value="天津">天津</option>
+                            <option name="location" value="河南">河南</option>
+                             <option name="location" value="吉林">吉林</option>
+                              <option name="location" value="广西">广西</option>
+                               <option name="location" value="江苏">江苏</option>
+                                <option name="location" value="新疆">新疆</option>
+                                 <option name="location" value="甘肃">甘肃</option>
+                                  <option name="location" value="山东">山东</option>
+                                   <option name="location" value="辽宁">辽宁</option>
+                                    <option name="location" value="四川">四川</option>
+                                     <option name="location" value="重庆">重庆</option>
+                                      <option name="location" value="其他">其他</option>
+                      </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="right"><input type="submit" name="submit" value="提交" /></td>
+                  <td align="left"><input type="reset" name="reset" value="重置" /></td>
+                </tr>
+              </table>
+
+      </form>
+</body>
+</html>

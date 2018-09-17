@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>开通账号</title>
+</head>
+
+<body bgcolor="#CCCFFF">
+  <div align="center">
+  <h1 align="center"> 请输入用户的基本信息（带*必填！）</h1>
+  <form method="get" name="form3" action="setCheck.jsp">
+  <table bordercolor="#CCCFFF" border="1">
+  <tr>
+    <td>*账户账号：</td>
+    <td><input type="text" size="15" name="userId"  />（只允许英文、数字，区分大小写）</td>
+  </tr>
+  <tr>
+    <td>*账户密码：</td>
+    <td><input type="password" size="15" name="userPassword" />（最长15位）</td>
+  </tr>
+  
+  <tr>
+    <td>*用户名称：</td>
+    <td><input type="text" size="15" name="userName" />请输入真实姓名</td>
+  </tr>
+  <tr>
+    <td>*性别选择：</td>
+    <td>
+        <input type="radio" name="sex" value="男" />男
+        <input type="radio" name="sex" value="女" />女
+    </td>
+  </tr>
+  <tr>
+    <td>*付款方式：</td>
+    <td>
+       <select name="pay">
+         <option selected="pay" value="money">现金支付</option>
+         <option nama="pay" value="银行转账" >银行转账</option>
+         <option name="pay" value="邮局汇款">邮局汇款</option>
+         <option name="pay" value="其他">其他</option>
+       </select>
+    </td>
+  </tr>
+  <tr>
+    <td>*用户状态：</td>
+    <td>
+    <input type="radio" name="state" checked="checked" value="open" />开通
+    <input type="radio" name="state" value="stop" />暂停
+    </td>
+  </tr>
+  <tr>
+    <td>*联系方式：</td>
+    <td><input type="text" name="tel" size="20" />请输入正确的电话号码，方便联系</td>
+  </tr>
+  <tr>
+    <td>*电子邮箱：</td>
+    <td><input type="text" name="email" size="20" />请输入正确的邮箱，方便联系</td>
+  </tr>
+  <tr>
+    <td align="center" colspan="2">以下选填（请尽量填写）</td>
+  </tr>
+   <tr>
+                  <td>个人爱好：</td>
+                  <td>
+                      <input type="text" name="love" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>职业：</td>
+                  <td>
+                     <select name="professional" size="1">
+                       <option name="professional" value="Java">Java工程师</option>
+                       <option name="professional" value="公务员">公务员</option>
+                       <option name="professional" value="学生">学生</option>
+                       <option name="professional" value="其他">其他</option>
+                     </select>
+                  </td>
+                </tr>
+                
+                <tr>
+                  <td>出生年月：</td>
+                  <td>
+                    <select name="birth">
+                        <option name="birth" value="1990">1990</option>
+                        <option name="birth" value="1991">1991</option>
+                        <option name="birth" value="1992">1992</option>
+                        <option name="birth" value="1993">1993</option>
+                        <option name="birth" value="1994">1994</option>
+                        <option name="birth" value="1995">1995</option>
+                        <option name="birth" value="1996">1996</option>
+                        <option name="birth" value="1997">1997</option>
+                        <option name="birth" value="1998">1998</option>
+                        <option name="birth" value="1999">1999</option>
+                        <option name="birth" value="2000">2000</option>
+                        <option name="birth" value="2001">2001</option>
+                        <option name="birth" value="2002">2002</option>
+                        <option name="birth" value="2003">2003</option>
+                        <option name="birth" value="2004">2004</option>
+                        <option name="birth" value="2005">2005</option>
+                        <option name="birth" value="2006">2006</option>
+                        <option name="birth" value="2007">2007</option>
+                        <option name="birth" value="2008">2008</option>
+                     </select>年
+                     <select name="birth1">
+                       <option name="birth1" value="01">01</option>
+                       <option name="birth1" value="02">02</option>
+                       <option name="birth1" value="03">03</option>
+                       <option name="birth1" value="04">04</option>
+                       <option name="birth1" value="05">05</option>
+                       <option name="birth1" value="06">06</option>
+                       <option name="birth1" value="07">07</option>
+                       <option name="birth1" value="08">08</option>
+                       <option name="birth1" value="09">09</option>
+                       <option name="birth1" value="10">10</option>
+                       <option name="birth1" value="11">11</option>
+                       <option name="birth1" value="12">12</option>
+                     </select>月
+                     <select name="birth2">
+                       <option name="birth2" value="01">01</option>
+                       <option name="birth2" value="02">02</option>
+                       <option name="birth2" value="03">03</option>
+                       <option name="birth2" value="04">04</option>
+                       <option name="birth2" value="05">05</option>
+                       <option name="birth2" value="06">06</option>
+                       <option name="birth2" value="07">07</option>
+                       <option name="birth2" value="08">08</option>
+                       <option name="birth2" value="09">09</option>
+                       <option name="birth2" value="10">10</option>
+                       <option name="birth2" value="11">11</option>
+                       <option name="birth2" value="12">12</option>
+                     </select>日
+                  </td>
+                </tr>
+                <tr>
+                  <td>所在地：</td>
+                  <td>
+                      <input type="text" name="location"/>
+                  </td>
+                </tr>
+</table>
+ <p> 
+  <input type="submit" value=" 提交" />
+  <input type="reset" value="重置" />
+  </p>
+
+  </form>
+  </div>
+</body>
+</html>
